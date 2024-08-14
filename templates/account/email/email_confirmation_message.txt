@@ -1,0 +1,13 @@
+{% load account %}
+{% user_display user as user_display %}
+{% load i18n %}
+{% autoescape off %}
+{% blocktrans with site_name=current_site.name site_domail=current_site.domain %}
+
+hellle bithches from {{ site_name }},
+
+hit the active button right now:
+{{ activate_url }}
+
+{% endblocktrans %}
+{% endautoescape %}

@@ -1,0 +1,4 @@
+{% load i18n %}
+{% autoescape off %}
+{% blocktrans %} hit the confirm button {% endblocktrans %}
+{% endautoescape %}
