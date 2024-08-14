@@ -18,6 +18,11 @@ class Prod(models.Model):
         return reverse('detail', args=[self.pk])
 
 
+class CommentsManager(models.Manager):
+    def get_queryset(self):
+        return super(CommentsManager, self).get_queryset().filter(active=True)
+
+
 class Comment(models.Model):
     given_stars = [
         ('1', 'horrible'),
@@ -29,9 +34,14 @@ class Comment(models.Model):
 
     prodd = models.ForeignKey(Prod, on_delete=models.CASCADE, related_name='commennnts', )
     author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='comments', )
-    body = models.TextField()
-    stars = models.CharField(max_length=10, choices=given_stars)
+    body = models.TextField(verbose_name='text')
+    stars = models.CharField(max_length=10, choices=given_stars, verbose_name='rating')
     date_creation = models.DateTimeField(auto_now_add=True)
     date_modification = models.DateTimeField(auto_now=True)
 
     active = models.BooleanField(default=True)
+    objects = models.Manager()
+    cm_manager = CommentsManager()
+
+    def get_absolute_url(self):
+        return reverse('detail', args=[self.pk])
