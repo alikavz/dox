@@ -2,6 +2,7 @@
 {% load crispy_forms_tags %}
 {% load static %}
 {% load comment_tags %}
+{% load i18n %}
 
 {% block content %}
     <!-- Main Wrapper Start -->
@@ -46,11 +47,11 @@
                                         </div>
                                     </div>
                                     <button type="button" class="btn btn-small btn-bg-red btn-color-white btn-hover-2" onclick="window.location.href='cart.html'">
-                                        اضافه به سبد خرید
+                                        {% trans 'Add to your cart' %}
                                     </button>
                                 </div>
                                 <div class="product-footer-meta mt-5 pt-5">
-                                    <p><span class="m-0">دسته بندی ها:</span>
+                                    <p><span class="m-0">{% trans 'categories' %}</span>
                                         <a href="shop.html">لباس</a>,
                                         <a href="shop.html">تابستانی</a>,
                                         <a href="shop.html">گرم</a>,
@@ -272,8 +273,8 @@
                             <span class="ammount">۱۴۸,۰۰۰ تومان</span>
                         </div>
                         <div class="mini-cart__buttons">
-                            <a href="cart.html" class="btn btn-fullwidth btn-bg-sand mb--20">مشاهده سبد خرید</a>
-                            <a href="checkout.html" class="btn btn-fullwidth btn-bg-sand">پرداخت</a>
+                            <a href="cart.html" class="btn btn-fullwidth btn-bg-sand mb--20">{% trans 'See your cart' %}</a>
+                            <a href="checkout.html" class="btn btn-fullwidth btn-bg-sand">{% trans 'Payments' %}</a>
                         </div>
                     </div>
                 </div>
