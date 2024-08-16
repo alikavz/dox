@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 from environs import Env
 import os
+from django.contrib.messages import constants as messages
 
 env = Env()
 env.read_env()
@@ -71,6 +72,10 @@ AUTHENTICATION_BACKENDS = [
     # `allauth` specific authentication methods, such as login by email
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
+
+LOCALE_PATHS = (
+    'templates/locale',
+)
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
@@ -141,8 +146,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
+LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'fa'
 
-LANGUAGE_CODE = 'fa'
+LANGUAGES = (
+    ('en', 'English'),
+    ('fa', 'Persian'),
+)
 
 TIME_ZONE = 'Asia/Tehran'
 
@@ -174,3 +184,7 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-16 20:40+0330\n"
+"POT-Creation-Date: 2024-08-16 22:26+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,18 +16,52 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\models.py:29
+msgid "horrible"
+msgstr "افتیضاح"
+
+#: .\models.py:30
+msgid "bad"
+msgstr "بد"
+
+#: .\models.py:31
+msgid "ok"
+msgstr "خوب"
+
+#: .\models.py:32
+msgid "good"
+msgstr "خیلی خوب"
+
+#: .\models.py:33
+msgid "perfecto"
+msgstr "کاااامل"
+
+#: .\models.py:37
+
+msgid "comments"
+msgstr "نظرات"
+
+#: .\models.py:38
+msgid "text"
+msgstr "متن نظر"
+
+#: .\models.py:39
+msgid "rating"
+msgstr "نمره"
+
 #: .\templates\productions\detail.html:50
 msgid "Add to your cart"
-msgstr ""
+msgstr "اضافه به سبد"
 
 #: .\templates\productions\detail.html:54
 msgid "categories"
-msgstr ""
+msgstr "دسته ها"
 
 #: .\templates\productions\detail.html:276
 msgid "See your cart"
-msgstr ""
+msgstr "سبد خرید"
 
 #: .\templates\productions\detail.html:277
 msgid "Payments"
-msgstr ""
+msgstr "پرداخت"

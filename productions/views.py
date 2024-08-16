@@ -27,6 +27,7 @@ class Sendcomment(generic.CreateView):
     model = Comment
     # tamami creat view ha form niaz darand
     form_class = Commentform
+    # fields = '__all__'
     # jahat save form
 
     def form_valid(self, form):
@@ -34,5 +35,5 @@ class Sendcomment(generic.CreateView):
         obj.author = self.request.user
         prod_id = int(self.kwargs['pk'])
         product = get_object_or_404(Prod, id=prod_id)
-        obj.product = product
+        obj.prodd = product
         return super().form_valid(form)
