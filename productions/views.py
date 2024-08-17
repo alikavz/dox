@@ -34,6 +34,6 @@ class Sendcomment(generic.CreateView):
         obj = form.save(commit=False)
         obj.author = self.request.user
         prod_id = int(self.kwargs['pk'])
-        product = get_object_or_404(Prod, id=prod_id)
-        obj.prodd = product
+        prodd = get_object_or_404(Prod, id=prod_id)
+        obj.prodd = prodd
         return super().form_valid(form)

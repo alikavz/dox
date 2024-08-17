@@ -45,4 +45,4 @@ class Comment(models.Model):
     cm_manager = CommentsManager()
 
     def get_absolute_url(self):
-        return reverse('detail', args=[self.pk])
+        return reverse('detail', args=[self.prodd.id])

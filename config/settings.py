@@ -50,9 +50,11 @@ INSTALLED_APPS = [
     'pages',
     'accounts',
     'productions',
+    'cart',
 
     'allauth',
     'allauth.account',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
