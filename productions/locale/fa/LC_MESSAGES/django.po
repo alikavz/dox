@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-16 22:26+0330\n"
+"POT-Creation-Date: 2024-08-18 19:25+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,6 @@ msgstr "خیلی خوب"
 msgid "perfecto"
 msgstr "کاااامل"
 
-#: .\models.py:37
-
-msgid "comments"
-msgstr "نظرات"
-
 #: .\models.py:38
 msgid "text"
 msgstr "متن نظر"
@@ -50,18 +45,30 @@ msgstr "متن نظر"
 msgid "rating"
 msgstr "نمره"
 
-#: .\templates\productions\detail.html:50
+#: .\templates\productions\detail.html:55
 msgid "Add to your cart"
 msgstr "اضافه به سبد"
 
-#: .\templates\productions\detail.html:54
+#: .\templates\productions\detail.html:61
 msgid "categories"
 msgstr "دسته ها"
 
-#: .\templates\productions\detail.html:276
+#: .\templates\productions\detail.html:153
+#, fuzzy
+#| msgid "Add to your cart"
+msgid "add your comment"
+msgstr "اضافه به سبد"
+
+#: .\templates\productions\detail.html:283
 msgid "See your cart"
 msgstr "سبد خرید"
 
-#: .\templates\productions\detail.html:277
+#: .\templates\productions\detail.html:284
 msgid "Payments"
 msgstr "پرداخت"
+
+#: .\views.py:43
+#, fuzzy
+#| msgid "comments"
+msgid "comment sent"
+msgstr "نظرات"

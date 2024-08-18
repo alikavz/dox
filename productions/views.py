@@ -2,6 +2,9 @@ from django.views import generic
 from .models import Prod, Comment
 from django.shortcuts import get_object_or_404
 from .forms import Commentform
+from cart.forms import Addtocart
+from django.utils.translation import gettext as _
+from django.contrib import messages
 
 
 class Productview(generic.ListView):
@@ -20,6 +23,7 @@ class Productdetailview(generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['comment_form'] = Commentform()
+        # context['add_to_cart'] = Addtocart()
         return context
 
 
@@ -36,4 +40,6 @@ class Sendcomment(generic.CreateView):
         prod_id = int(self.kwargs['pk'])
         prodd = get_object_or_404(Prod, id=prod_id)
         obj.prodd = prodd
+        messages.success(self.request, _('comment sent'))
         return super().form_valid(form)
+
