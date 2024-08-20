@@ -11,6 +11,7 @@ class Prod(models.Model):
     datetime = models.DateTimeField(auto_now=True)
     price = models.PositiveIntegerField(default=0)  # DecimalField for dollars
     status = models.BooleanField(default=True)
+    image = models.ImageField(verbose_name=_('image'), upload_to='productions/img', blank=True, )
 
     def __str__(self):
         return self.title
