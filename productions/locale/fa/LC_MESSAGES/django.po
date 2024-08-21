@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-18 19:25+0330\n"
-"PO-Revision-Date: 2024-08-19 13:34+0330\n"
+"PO-Revision-Date: 2024-08-20 18:27+0330\n"
 "Last-Translator:   <ali@ali.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -55,10 +55,9 @@ msgid "categories"
 msgstr "دسته ها"
 
 #: .\templates\productions\detail.html:153
-#, fuzzy
 #| msgid "Add to your cart"
 msgid "add your comment"
-msgstr "اضافه به سبد"
+msgstr "نظر بدهید"
 
 #: .\templates\productions\detail.html:283
 msgid "See your cart"

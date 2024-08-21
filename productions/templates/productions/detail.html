@@ -3,6 +3,7 @@
 {% load static %}
 {% load comment_tags %}
 {% load i18n %}
+{% load jalali_tags %}
 
 {% block content %}
     <!-- Main Wrapper Start -->
@@ -126,10 +127,10 @@
                                                                          alt="Review Avatar"
                                                                          class="review__avatar p-33">
                                                                     <div>
-                                                                        <div class="review__meta">
+                                                                        <div class="review__meta" dir="ltr">
                                                                             <strong class="review__author px-4">{{ commennnt.author.username }}</strong>
                                                                             <span class="review__dash">-</span>
-                                                                            <span class="review__published-date">{{ commennnt.date_creation }}</span>
+                                                                            <span class="review__published-date">{{ commennnt.date_creation|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</span>
                                                                         </div>
                                                                         <div class="product-rating">
                                                                             <div class="m-0 star-rating star-five">

@@ -24,7 +24,7 @@
                                         </a>
                                     </span>
                                 <span class="mini-cart__product__quantity">
-                                        <span>{{ items.product_object.price }} تومان</span> &#215; <span>۱</span>
+                                        <span>{{ items.product_object.price }} {% trans '$' %}</span> &#215; <span>۱</span>
                                     </span>
                             </div>
                         </li>
@@ -32,7 +32,7 @@
 
                 </ul>
                 <div class="mini-cart__total">
-                    <span>جمع کل</span>
+                    <span>{% trans 'total prices' %}</span>
                     <span class="ammount">{{ cart.get_total_price }} {% trans '$' %}</span>
                 </div>
                 <div class="mini-cart__buttons">

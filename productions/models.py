@@ -1,3 +1,4 @@
+from django.utils import timezone
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.shortcuts import reverse
@@ -7,11 +8,11 @@ from django.utils.translation import gettext_lazy as _
 class Prod(models.Model):
     title = models.CharField(max_length=100)
     desc = models.TextField()
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(default=timezone.now, verbose_name=_('Date of creation'))
     datetime = models.DateTimeField(auto_now=True)
     price = models.PositiveIntegerField(default=0)  # DecimalField for dollars
     status = models.BooleanField(default=True)
-    image = models.ImageField(verbose_name=_('image'), upload_to='productions/img', blank=True, )
+    image = models.ImageField(verbose_name=_('image'), upload_to='productions/img/w', blank=True, )
 
     def __str__(self):
         return self.title
