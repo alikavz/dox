@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'jalali_date',
+    'django.contrib.humanize',
 
     'crispy_forms',
     'crispy_bootstrap4',
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
     'accounts',
     'productions',
     'cart',
+    'persiantrans',
 
     'allauth',
     'allauth.account',

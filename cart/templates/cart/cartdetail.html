@@ -3,6 +3,8 @@ W{% extends '_base.html' %}
 {% load static %}
 {% load comment_tags %}
 {% load i18n %}
+{% load persian_tags %}
+{% load humanize %}
 
 {% block content %}
     {% trans 'Cart' as gg %}
@@ -43,7 +45,7 @@ W{% extends '_base.html' %}
                                                     </td>
                                                     <td class="product-price">
                                                                 <span class="product-price-wrapper">
-                                                                    <span class="money">{{ items.product_object.price }} {% trans '$' %}</span>
+                                                                    <span class="money">{{ items.product_object.price|intcomma:False|trans_num }} {% trans '$' %}</span>
                                                                 </span>
                                                     </td>
                                                     <td class="product-quantity">
@@ -61,7 +63,7 @@ W{% extends '_base.html' %}
                                                     </td>
                                                     <td class="product-total-price">
                                                                 <span class="product-price-wrapper">
-                                                                    <span class="money">{{ items.total_price }} {% trans '$' %}</span>
+                                                                    <span class="money">{{ items.total_price|intcomma:False|trans_num }} {% trans '$' %}</span>
                                                                 </span>
                                                     </td>
                                                     </tr>
@@ -102,7 +104,7 @@ W{% extends '_base.html' %}
                                             </div>
                                             <div class="cart-calculator__item--value">
                                                     <span class="product-price-wrapper">
-                                                        <span class="money">{{ cart.get_total_price }} {% trans '$' %}</span>
+                                                        <span class="money">{{ cart.get_total_price|intcomma:False|trans_num }} {% trans '$' %}</span>
                                                     </span>
                                             </div>
                                         </div>

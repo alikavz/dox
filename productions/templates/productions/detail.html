@@ -4,6 +4,8 @@
 {% load comment_tags %}
 {% load i18n %}
 {% load jalali_tags %}
+{% load persian_tags %}
+{% load humanize %}
 
 {% block content %}
     <!-- Main Wrapper Start -->
@@ -30,7 +32,7 @@
                                     {{ productss.desc }}
                                 </p>
                                 <div class="my-5 py-5 product-price-wrapper mb--25">
-                                    <span class="money text-success">{{ productss.price }} تومان</span>
+                                    <span class="money text-success">{{ productss.price|intcomma:False|trans_num }} {% trans '$' %}</span>
                                     <span class="price-separator">-</span>
                                     <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>
                                 </div>
