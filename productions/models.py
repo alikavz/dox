@@ -3,11 +3,13 @@ from django.contrib.auth import get_user_model
 from django.db import models
 from django.shortcuts import reverse
 from django.utils.translation import gettext_lazy as _
+from ckeditor.fields import RichTextField
 
 
 class Prod(models.Model):
     title = models.CharField(max_length=100)
-    desc = models.TextField()
+    desc = RichTextField(verbose_name=_('details'))
+    short_desc = models.TextField(blank=True, verbose_name=_('short description'))
     date = models.DateTimeField(default=timezone.now, verbose_name=_('Date of creation'))
     datetime = models.DateTimeField(auto_now=True)
     price = models.PositiveIntegerField(default=0)  # DecimalField for dollars

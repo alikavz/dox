@@ -4,7 +4,7 @@
 {% load comment_tags %}
 {% load i18n %}
 {% load jalali_tags %}
-{% load persian_tags %}
+{#{% load persian_tags %}#}
 {% load humanize %}
 
 {% block content %}
@@ -29,10 +29,10 @@
                             <div class="product-summary pl-lg--30 pl-md--0 text-right p-4">
                                 <h3 class="product-title mb--20">{{ productss.title }}</h3>
                                 <p class="product-short-description mb--20">
-                                    {{ productss.desc }}
+                                    {{ productss.short_desc|truncatechars:120 }}
                                 </p>
                                 <div class="my-5 py-5 product-price-wrapper mb--25">
-                                    <span class="money text-success">{{ productss.price|intcomma:False|trans_num }} {% trans '$' %}</span>
+                                    <span class="money text-success">{{ productss.price|intcomma:False }} {% trans '$' %}</span>
                                     <span class="price-separator">-</span>
                                     <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>
                                 </div>
@@ -85,7 +85,7 @@
                                     <div class="tab-pane fade show active" id="nav-description" role="tabpanel"
                                          aria-labelledby="nav-description-tab">
                                         <div class="product-description text-justify">
-                                            <p> {{ productss.desc }}
+                                            <p> {{ productss.desc|safe }}
                                         </div>
                                     </div>
                                     <div class="tab-pane text-right" id="nav-info" role="tabpanel"
