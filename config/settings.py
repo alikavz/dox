@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'productions',
     'cart',
     'persiantrans.apps.PersiantransConfig',
+    'lawandorder',
 
     'allauth',
     'allauth.account',

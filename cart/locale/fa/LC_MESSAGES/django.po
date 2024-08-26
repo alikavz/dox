@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-18 19:23+0330\n"
+"POT-Creation-Date: 2024-08-26 20:57+0330\n"
 "PO-Revision-Date: 2024-08-19 13:33+0330\n"
 "Last-Translator:   <ali@ali.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,14 +26,84 @@ msgstr "با موفقیت اضافه شد"
 msgid "removed successfully"
 msgstr "با موفقیت حذف شد"
 
-#: .\template\cartdetail.html:54
+#: .\templates\cart\cart_sidebar.html:8
+msgid "cart"
+msgstr ""
+
+#: .\templates\cart\cart_sidebar.html:27 .\templates\cart\cart_sidebar.html:36
+#: .\templates\cart\cartdetail.html:48 .\templates\cart\cartdetail.html:66
+#: .\templates\cart\cartdetail.html:107
+msgid "$"
+msgstr ""
+
+#: .\templates\cart\cart_sidebar.html:35
+msgid "total prices"
+msgstr ""
+
+#: .\templates\cart\cart_sidebar.html:40
+msgid "See your cart"
+msgstr ""
+
+#: .\templates\cart\cart_sidebar.html:41
+msgid "Payments"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:10
+msgid "Cart"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:25
+msgid "cover"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:26
+msgid "title"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:27
+msgid "fee"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:28
+msgid "numbers"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:29
+msgid "total fees"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:61
 msgid "update"
 msgstr "بروزرسانی گردید"
 
-#: .\template\cartdetail.html:70
+#: .\templates\cart\cartdetail.html:77
 msgid "your cart is empty! buy some shit"
 msgstr "سبد خرید شما خالی است لطفا چیز میز بخرید"
 
-#: .\template\cartdetail.html:71
+#: .\templates\cart\cartdetail.html:78
 msgid "lets go toilet"
 msgstr "بیایید بریم میز فروشی"
+
+#: .\templates\cart\cartdetail.html:84
+msgid "empty your cart"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:91
+msgid "total"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:103
+msgid "total values"
+msgstr ""
+
+#: .\views.py:46
+#, fuzzy
+#| msgid "removed successfully"
+msgid "removed successfully!"
+msgstr "با موفقیت حذف شد"
+
+#: .\views.py:48
+#, fuzzy
+#| msgid "your cart is empty! buy some shit"
+msgid "your cart is already empty!"
+msgstr "سبد خرید شما خالی است لطفا چیز میز بخرید"

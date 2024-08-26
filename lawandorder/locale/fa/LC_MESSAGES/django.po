@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-25 21:39+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\models.py:7
+msgid "user"
+msgstr ""
+
+#: .\models.py:8
+msgid "Is paid?"
+msgstr ""
+
+#: .\models.py:10
+msgid "First name"
+msgstr ""
+
+#: .\models.py:11
+msgid "Last name"
+msgstr ""
+
+#: .\models.py:12
+msgid "Phone number"
+msgstr ""
+
+#: .\models.py:13
+msgid "Address"
+msgstr ""
+
+#: .\models.py:15
+msgid "Order notes"
+msgstr ""
+
+#: .\models.py:17
+msgid "Create"
+msgstr ""
+
+#: .\models.py:18
+msgid "Modify"
+msgstr ""
+
+#: .\templates\lawandorder\orderdetail.html:10
+msgid "Order"
+msgstr ""
+
+#: .\templates\lawandorder\orderdetail.html:81
+#: .\templates\lawandorder\orderdetail.html:90
+msgid "$"
+msgstr ""
+
+#: .\templates\lawandorder\orderdetail.html:89
+msgid "Total payment"
+msgstr ""

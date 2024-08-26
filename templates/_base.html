@@ -67,7 +67,7 @@
                                 <div class="site-branding" style="margin-right: 30px;">
                                     <a href="{% url 'home' %}" class="logo">
                                         <figure class="logo--normal d-none d-sm-block">
-                                            <img class="px-5" src="assets/img/codingyar_logo.png" style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
+                                            <img class="px-5" src="{% static 'img/download.png' %}" style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
                                         </figure>
                                     </a>
                                 </div>
@@ -89,7 +89,7 @@
                                             </a>
                                          </li>
                                         <li class="mainmenu__item">
-                                            <a href="#" class="mainmenu__link">
+                                            <a href="{% url 'about' %}" class="mainmenu__link">
                                                 <span class="mm-text">تماس با ما</span>
                                             </a>
                                         </li>
@@ -162,6 +162,7 @@
 {% block content %}
 
 {% endblock %}
+{% include 'footer.html' %}
 {#{% include 'cart/cart_sidebar.html' %}#}
 
 <script src="{% static 'js/vendor.js' %}"></script>
