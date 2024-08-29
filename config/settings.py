@@ -26,13 +26,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("DJANGO_SECRET_KEY")
-# SECRET_KEY = "django-insecure-6s(8*(_2bz$*wje80jnp%fmg97b_mlpxpz^b6ar7j1$il!3w$7"
+# SECRET_KEY = env("DJANGO_SECRET_KEY")
+SECRET_KEY = "django-insecure-6s(8*(_2bz$*wje80jnp%fmg97b_mlpxpz^b6ar7j1$il!3w$7"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DJANGO_DEBUG")
-# DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com']
+# DEBUG = env.bool("DJANGO_DEBUG")
+DEBUG = True
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com', '.liara.run']
 
 
 # Application definition
@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'cart',
     'persiantrans.apps.PersiantransConfig',
     'lawandorder',
+    'pays',
 
     'allauth',
     'allauth.account',

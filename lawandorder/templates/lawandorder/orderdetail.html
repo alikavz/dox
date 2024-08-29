@@ -16,7 +16,7 @@
                     <!-- Checkout Area Start -->
                     <div class="col-lg-6">
                         <div class="checkout-title mt--10">
-                            <h2>جزئیات سفارش</h2>
+                            <h2>{% trans 'orders detail' %}</h2>
                         </div>
                         <div class="checkout-form">
                             <form action="" method="POST" class="form form--checkout">
@@ -28,29 +28,29 @@
                                 {% endif %} 
                                 <div class="form-row mb--20">
                                     <div class="form__group col-md-6 mb-sm--30">
-                                        <label for="billing_fname" class="form__label form__label--2">نام  <span class="required">*</span></label>
+                                        <label for="billing_fname" class="form__label form__label--2">{% trans 'first name' %}  <span class="required">*</span></label>
                                         <input type="text" name="{{ form.first_name.name }}" id="billing_fname" class="form__input form__input--2">
                                     </div>
                                     <div class="form__group col-md-6">
-                                        <label for="billing_lname" class="form__label form__label--2">نام خانوادگی  <span class="required">*</span></label>
+                                        <label for="billing_lname" class="form__label form__label--2">{% trans 'sure name' %}  <span class="required">*</span></label>
                                         <input type="text" name="{{ form.last_name.name }}" id="billing_lname" class="form__input form__input--2">
                                     </div>
                                 </div>
                                 <div class="form-row mb--20">
                                     <div class="form__group col-12">
-                                        <label for="shipping_address" class="form__label form__label--2">آدرس</label>
+                                        <label for="shipping_address" class="form__label form__label--2">{% trans 'address' %}</label>
                                         <input type="text" name="{{ form.address.name }}" id="shipping_address" class="form__input form__input--2">
                                     </div>
                                 </div>
                                 <div class="form-row mb--20">
                                     <div class="form__group col-12">
-                                        <label for="billing_phone" class="form__label form__label--2">شماره همراه <span class="required">*</span></label>
+                                        <label for="billing_phone" class="form__label form__label--2">{% trans 'phone number' %} <span class="required">*</span></label>
                                         <input type="text" name="{{ form.phone_number.name }}" id="billing_phone" class="form__input form__input--2">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form__group col-12">
-                                        <label for="orderNotes" class="form__label form__label--2">یادداشت شما</label>
+                                        <label for="orderNotes" class="form__label form__label--2">{% trans 'order notes' %}</label>
                                         <textarea class="form__input form__input--2 form__input--textarea" id="orderNotes" name="{{ form.order_notes.name }}" placeholder="اگر یادداشتی دارید در اینجا وارد کنید. در غیر این صورت این مکان را خالی بگذارید"></textarea>
                                     </div>
                                 </div>
@@ -61,14 +61,14 @@
                     <div class="col-xl-5 offset-xl-1 col-lg-6 mt-md--40">
                         <div class="order-details">
                             <div class="checkout-title mt--10">
-                                <h2>سفارش شما</h2>
+                                <h2>{% trans 'your orders' %}</h2>
                             </div>
                             <div class="table-content table-responsive mb--30">
                                 <table class="table order-table order-table-2">
                                     <thead>
                                         <tr>
-                                            <th>محصول</th>
-                                            <th class="text-right">قیمت نهایی</th>
+                                            <th>{% trans 'productions' %}</th>
+                                            <th class="text-right">{% trans 'finalized order' %}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -93,12 +93,12 @@
                                 </table>
                             </div>
                             <div class="checkout-payment">
-                                <h2 class="py-5">روش پرداخت</h2>
+                                <h2 class="py-5">{% trans 'peyment method' %}</h2>
                                 <form action="#" class="payment-form">
                                     <div class="payment-group mb--10">
                                         <div class="payment-radio">
                                             <input type="radio" value="bank" name="payment-method" id="bank" checked>
-                                            <label class="payment-label" for="cheque">درگاه آنلاین زرین پال</label>
+                                            <label class="payment-label" for="cheque">{% trans 'pay online' %}</label>
                                         </div>
                                     </div>
                                 </form>

@@ -67,7 +67,7 @@
                                 <div class="site-branding" style="margin-right: 30px;">
                                     <a href="{% url 'home' %}" class="logo">
                                         <figure class="logo--normal d-none d-sm-block">
-                                            <img class="px-5" src="{% static 'img/download.png' %}" style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
+                                            <img class="px-5" src="{% static 'img/up_logo.png' %}" style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
                                         </figure>
                                     </a>
                                 </div>
@@ -75,22 +75,22 @@
                                     <ul class="mainmenu d-lg-flex jusity-content-end jusity-content-lg-start pt-4">
                                         <li class="mainmenu__item menu-item-has-children active">
                                             <a href="{% url 'home' %}" class="mainmenu__link">
-                                                <span class="mm-text">خانه</span>
+                                                <span class="mm-text">{% trans 'home' %}</span>
                                             </a>
                                         </li>
-                                        <li class="mainmenu__item menu-item-has-children">
-                                            <a href="Blog.html" class="mainmenu__link">
-                                                <span class="mm-text">وبلاگ</span>
-                                            </a>
-                                        </li>
+{#                                        <li class="mainmenu__item menu-item-has-children">#}
+{#                                            <a href="Blog.html" class="mainmenu__link">#}
+{#                                                <span class="mm-text">{% trans 'blog' %}</span>#}
+{#                                            </a>#}
+{#                                        </li>#}
                                         <li class="mainmenu__item menu-item-has-children">
                                             <a href="{% url 'les' %}" class="mainmenu__link">
-                                                <span class="mm-text">صفحات</span>
+                                                <span class="mm-text">{% trans 'gallery' %}</span>
                                             </a>
                                          </li>
                                         <li class="mainmenu__item">
                                             <a href="{% url 'about' %}" class="mainmenu__link">
-                                                <span class="mm-text">تماس با ما</span>
+                                                <span class="mm-text">{% trans 'contact us' %}</span>
                                             </a>
                                         </li>
                                     </ul>

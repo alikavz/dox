@@ -9,7 +9,7 @@ from django.utils.translation import gettext as _
 
 @login_required
 def createorder(request):
-    order_form = Orderingform
+    order_form = Orderingform()
     cart = Cart(request)
 
     if len(cart) == 0:

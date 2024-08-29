@@ -4,7 +4,7 @@
 {% load comment_tags %}
 {% load i18n %}
 {% load jalali_tags %}
-{#{% load persian_tags %}#}
+{% load persian_tags %}
 {% load humanize %}
 
 {% block content %}
@@ -32,7 +32,7 @@
                                     {{ productss.short_desc|truncatechars:120 }}
                                 </p>
                                 <div class="my-5 py-5 product-price-wrapper mb--25">
-                                    <span class="money text-success">{{ productss.price|intcomma:False }} {% trans '$' %}</span>
+                                    <span class="money text-success">{{ productss.price|intcomma:False|trans_num }} {% trans '$' %}</span>
                                     <span class="price-separator">-</span>
                                     <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>
                                 </div>
@@ -118,7 +118,7 @@
                                          aria-labelledby="nav-reviews-tab">
                                         <div class="product-reviews">
                                             <h3 class="review__title">{{ productss.commennnts.all|only_active_comments|length }}
-                                                نظر برای {{ productss.title }}</h3>
+                                                {% trans 'comments for' %} {{ productss.title }}</h3>
                                             <ul class="review__list">
                                                 <li class="review__item">
                                                     {% for commennnt in productss.commennnts.all|only_active_comments %}

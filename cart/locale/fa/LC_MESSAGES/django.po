@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-26 20:57+0330\n"
-"PO-Revision-Date: 2024-08-19 13:33+0330\n"
+"POT-Creation-Date: 2024-08-27 19:12+0330\n"
+"PO-Revision-Date: 2024-08-27 12:38+0330\n"
 "Last-Translator:   <ali@ali.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,82 +28,88 @@ msgstr "با موفقیت حذف شد"
 
 #: .\templates\cart\cart_sidebar.html:8
 msgid "cart"
-msgstr ""
+msgstr "سبد خرید"
 
-#: .\templates\cart\cart_sidebar.html:27 .\templates\cart\cart_sidebar.html:36
-#: .\templates\cart\cartdetail.html:48 .\templates\cart\cartdetail.html:66
-#: .\templates\cart\cartdetail.html:107
+#: .\templates\cart\cart_sidebar.html:26 .\templates\cart\cart_sidebar.html:35
+#: .\templates\cart\cartdetail.html:49 .\templates\cart\cartdetail.html:67
+#: .\templates\cart\cartdetail.html:115
 msgid "$"
-msgstr ""
+msgstr "تومان"
 
-#: .\templates\cart\cart_sidebar.html:35
+#: .\templates\cart\cart_sidebar.html:34
 msgid "total prices"
-msgstr ""
+msgstr "مجموع قیمت ها"
 
-#: .\templates\cart\cart_sidebar.html:40
+#: .\templates\cart\cart_sidebar.html:39
 msgid "See your cart"
-msgstr ""
+msgstr "مشاهده سبد پرداخت"
 
 #: .\templates\cart\cart_sidebar.html:41
 msgid "Payments"
-msgstr ""
+msgstr "قابل پرداخت"
 
 #: .\templates\cart\cartdetail.html:10
 msgid "Cart"
-msgstr ""
+msgstr "سبد خرید"
 
 #: .\templates\cart\cartdetail.html:25
 msgid "cover"
-msgstr ""
+msgstr "عکس محصول"
 
 #: .\templates\cart\cartdetail.html:26
 msgid "title"
-msgstr ""
+msgstr "عنوان"
 
 #: .\templates\cart\cartdetail.html:27
 msgid "fee"
-msgstr ""
+msgstr "فی"
 
 #: .\templates\cart\cartdetail.html:28
 msgid "numbers"
-msgstr ""
+msgstr "تعداد"
 
 #: .\templates\cart\cartdetail.html:29
 msgid "total fees"
-msgstr ""
+msgstr "مجموع قیمت"
 
-#: .\templates\cart\cartdetail.html:61
+#: .\templates\cart\cartdetail.html:62
 msgid "update"
 msgstr "بروزرسانی گردید"
 
-#: .\templates\cart\cartdetail.html:77
-msgid "your cart is empty! buy some shit"
-msgstr "سبد خرید شما خالی است لطفا چیز میز بخرید"
-
 #: .\templates\cart\cartdetail.html:78
-msgid "lets go toilet"
-msgstr "بیایید بریم میز فروشی"
+msgid "you want your home to be spactacular?! design like an artist!"
+msgstr ""
 
-#: .\templates\cart\cartdetail.html:84
+#: .\templates\cart\cartdetail.html:79
+msgid "ready?"
+msgstr ""
+
+#: .\templates\cart\cartdetail.html:90
 msgid "empty your cart"
-msgstr ""
+msgstr "خالی کردن سبد خرید"
 
-#: .\templates\cart\cartdetail.html:91
+#: .\templates\cart\cartdetail.html:99
 msgid "total"
-msgstr ""
+msgstr "مجموع"
 
-#: .\templates\cart\cartdetail.html:103
+#: .\templates\cart\cartdetail.html:111
 msgid "total values"
+msgstr "ارزش تمام شده"
+
+#: .\templates\cart\cartdetail.html:123
+msgid "checkout"
 msgstr ""
 
-#: .\views.py:46
-#, fuzzy
-#| msgid "removed successfully"
+#: .\views.py:48
 msgid "removed successfully!"
 msgstr "با موفقیت حذف شد"
 
-#: .\views.py:48
-#, fuzzy
-#| msgid "your cart is empty! buy some shit"
+#: .\views.py:50
 msgid "your cart is already empty!"
 msgstr "سبد خرید شما خالی است لطفا چیز میز بخرید"
+
+#~ msgid "your cart is empty! buy some shit"
+#~ msgstr "سبد خرید شما خالی است لطفا چیز میز بخرید"
+
+#~ msgid "lets go toilet"
+#~ msgstr "بیایید بریم میز فروشی"
