@@ -32,7 +32,7 @@
                                     {{ productss.short_desc|truncatechars:120 }}
                                 </p>
                                 <div class="my-5 py-5 product-price-wrapper mb--25">
-                                    <span class="money text-success">{{ productss.price|intcomma:False|trans_num }} {% trans '$' %}</span>
+                                    <span class="money text-success">{{ productss.price|intcomma:False }} {% trans '$' %}</span>
 {#                                    <span class="price-separator">-</span>#}
 {#                                    <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>#}
                                 </div>
@@ -55,10 +55,10 @@
                                 </div>
                                 <div class="product-footer-meta mt-5 pt-5">
                                     <p><span class="m-0">{% trans 'categories' %}</span>
-                                        <a href="shop.html">لباس</a>,
-                                        <a href="shop.html">تابستانی</a>,
-                                        <a href="shop.html">گرم</a>,
-                                        <a href="shop.html">زنانه</a>
+                                        <a href="shop.html">{% trans '#Art' %}</a>,
+                                        <a href="shop.html">{% trans '#book' %}</a>,
+                                        <a href="shop.html">{% trans '#sketch' %}</a>,
+                                        <a href="shop.html">{% trans '#meta' %}</a>
                                     </p>
                                 </div>
                             </div>
@@ -70,15 +70,15 @@
                                 <div class="nav nav-tabs product-data-tab__head" id="product-tab" role="tablist">
                                     <a class="m-0 product-data-tab__link nav-link active" id="nav-description-tab"
                                        data-toggle="tab" href="#nav-description" role="tab" aria-selected="true">
-                                        <span>توضیحات محصول</span>
+                                        <span>{% trans 'details' %} </span>
                                     </a>
-                                    <a class="m-0 product-data-tab__link nav-link" id="nav-info-tab" data-toggle="tab"
-                                       href="#nav-info" role="tab" aria-selected="true">
-                                        <span>ویژگی ها</span>
-                                    </a>
+{#                                    <a class="m-0 product-data-tab__link nav-link" id="nav-info-tab" data-toggle="tab"#}
+{#                                       href="#nav-info" role="tab" aria-selected="true">#}
+{#                                        <span>{% trans 'features' %} </span>#}
+{#                                    </a>#}
                                     <a class="m-0 product-data-tab__link nav-link" id="nav-reviews-tab"
                                        data-toggle="tab" href="#nav-reviews" role="tab" aria-selected="true">
-                                        <span>نظرات ({{ productss.commennnts.all|only_active_comments|length }})</span>
+                                        <span>{% trans 'comments' %} ({{ productss.commennnts.all|only_active_comments|length }})</span>
                                     </a>
                                 </div>
                                 <div class="tab-content product-data-tab__content" id="product-tabContent">
@@ -88,32 +88,32 @@
                                             <p> {{ productss.desc|safe }}
                                         </div>
                                     </div>
-                                    <div class="tab-pane text-right" id="nav-info" role="tabpanel"
-                                         aria-labelledby="nav-info-tab">
-                                        <div class="table-content table-responsive">
-                                            <table class="table shop_attributes">
-                                                <tbody>
-                                                <tr>
-                                                    <th>وزن</th>
-                                                    <td>۴۳۰ گرم</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>سایز</th>
-                                                    <td>XL</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>رنگ</th>
-                                                    <td>
-                                                        <a href="shop-sidebar.html">مشکی</a>,
-                                                        <a href="shop-sidebar.html">سبز</a>,
-                                                        <a href="shop-sidebar.html">قرمز</a>,
-                                                        <a href="shop-sidebar.html">نارنجی</a>,
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+{#                                    <div class="tab-pane text-right" id="nav-info" role="tabpanel"#}
+{#                                         aria-labelledby="nav-info-tab">#}
+{#                                        <div class="table-content table-responsive">#}
+{#                                            <table class="table shop_attributes">#}
+{#                                                <tbody>#}
+{#                                                <tr>#}
+{#                                                    <th>وزن</th>#}
+{#                                                    <td>۴۳۰ گرم</td>#}
+{#                                                </tr>#}
+{#                                                <tr>#}
+{#                                                    <th>سایز</th>#}
+{#                                                    <td>XL</td>#}
+{#                                                </tr>#}
+{#                                                <tr>#}
+{#                                                    <th>رنگ</th>#}
+{#                                                    <td>#}
+{#                                                        <a href="shop-sidebar.html">مشکی</a>,#}
+{#                                                        <a href="shop-sidebar.html">سبز</a>,#}
+{#                                                        <a href="shop-sidebar.html">قرمز</a>,#}
+{#                                                        <a href="shop-sidebar.html">نارنجی</a>,#}
+{#                                                    </td>#}
+{#                                                </tr>#}
+{#                                                </tbody>#}
+{#                                            </table>#}
+{#                                        </div>#}
+{#                                    </div>#}
                                     <div class="tab-pane fade" id="nav-reviews" role="tabpanel"
                                          aria-labelledby="nav-reviews-tab">
                                         <div class="product-reviews">
